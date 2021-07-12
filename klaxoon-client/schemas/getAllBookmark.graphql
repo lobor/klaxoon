@@ -1,0 +1,13 @@
+query getAllBookmark($limit: Int, $page: Int) {
+  getAllBookmark(limit: $limit, page: $page) {
+    _id
+    url
+    title
+    autor
+    createdAt
+    width
+    height
+    time
+  }
+  countBookmark
+}

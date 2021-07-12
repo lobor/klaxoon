@@ -1,0 +1,28 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Bookmark {
+  _id: ID!
+  url: String!
+  title: String!
+  autor: String!
+  type: String!
+  createdAt: Float!
+  width: Int!
+  height: Int!
+  time: Float
+  keywords: [String!]
+}
+
+type Query {
+  getAllBookmark(page: Int = 1, limit: Int = 10): [Bookmark!]!
+  getBookmarkById(_id: ID!): Bookmark!
+  countBookmark: Float!
+}
+
+type Mutation {
+  addBookmark(url: String!): Bookmark!
+  removeBookmark(_id: ID!): Boolean!
+  updateKeywordsBookmark(keywords: [String!]!, _id: ID!): Bookmark!
+}

@@ -1,0 +1,6 @@
+mutation updateKeywordsBookmark($_id: ID!, $keywords: [String!]!) {
+  updateKeywordsBookmark(_id: $_id, keywords: $keywords) {
+    _id
+    keywords
+  }
+}

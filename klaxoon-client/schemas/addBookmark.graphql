@@ -1,0 +1,12 @@
+mutation addBookmark($url: String!) {
+  addBookmark(url: $url) {
+    _id
+    url
+    title
+    autor
+    createdAt
+    width
+    height
+    time
+  }
+}

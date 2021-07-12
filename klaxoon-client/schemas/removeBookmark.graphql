@@ -1,0 +1,3 @@
+mutation removeBookmark($_id: ID!) {
+  removeBookmark(_id: $_id)
+}

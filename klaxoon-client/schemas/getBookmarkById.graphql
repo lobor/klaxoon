@@ -1,0 +1,7 @@
+query getBookmarkById($_id: ID!) {
+  getBookmarkById(_id: $_id) {
+    _id
+    title
+    keywords
+  }
+}

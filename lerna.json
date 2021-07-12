@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "klaxoon-client",
+    "klaxoon-server"
+  ],
+  "version": "independent"
+}
